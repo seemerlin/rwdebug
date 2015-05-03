@@ -1,0 +1,32 @@
+#resolution {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 3px 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: red;
+}
+
+#resolution:before {
+    content: "<=768 (xs)";
+}
+
+@media (min-width: 768px) {
+    #resolution:before {
+        content: ">=768 (sm)";
+    }
+}
+
+
+@media (min-width: 992px) {
+    #resolution:before {
+        content: ">=992 (md)";
+    }
+}
+
+@media (min-width: 1200px) {
+    #resolution:before {
+        content: ">=1200 (lg)";
+    }
+}
